@@ -11,7 +11,7 @@ def create_app():
 
     ## Registering Blueprints ##
     app.register_blueprint(views,url_prefix='/')
-    app.register_blueprint(auth,url_prefix='/') ##url-prefix is a way to make nested dmatheny.ninja/auth/nest1/nested2 ##
+    app.register_blueprint(auth,url_prefix='/') ##url-prefix is a way to make nested dmatheny.ninja/nest1/nest2  vs dmatheny.ninja/auth/nest1 /nested2 ##
     ## Registering Blueprints ##
 
 
