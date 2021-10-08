@@ -19,12 +19,11 @@ def create_app():
     app.register_blueprint(auth,url_prefix='/') ##url-prefix is a way to make nested dmatheny.ninja/nest1/nest2  vs dmatheny.ninja/auth/nest1 /nested2 ##
     ## Database Creation ##
     from .models import User, Note
-
     create_database(app)
-
     return app
 
 def create_database(app):
     if not path.exists('website/' + DB_NAME):
          db.create_all(app=app)
-    print('created database')
+    print(' * SQLAlchemy database is running')
+

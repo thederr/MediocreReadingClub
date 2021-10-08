@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request, flash
 
 ## Defining that this file is a blueprint of our applicaiton ###
 ## We have to register these blueprints in our init.py ##
